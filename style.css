@@ -1,0 +1,112 @@
+
+body {
+    background-image: url("ween.jpg");
+    background-size: cover;
+    font-family: monaco, "Courier New";
+}
+
+#title-div p {
+    font-size: 18px;
+}
+
+#title-div {
+    font-family: monaco, "Courier New";
+    background-color: rgba(98, 199, 199, 0.788);
+    text-align: center;
+    max-width: 600px;
+    margin: 3vh auto -15px auto;
+    padding: 20px 52px 20px 45px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: 1px solid black;
+}
+
+form {
+    border-radius: 7px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 1px solid black;
+    /* border-top: none; */
+    max-width: 600px;
+    margin: 3vh auto;
+    padding: 20px 52px 20px 45px;
+    background-color: rgba(238, 68, 133, 0.89);
+}
+
+label, fieldset {
+    text-transform: uppercase;
+    border: none;
+}
+
+#survey-story-label {
+    text-transform: unset;
+    margin-left: 3px;
+}
+
+.single-input input, 
+.single-input label {
+    display: block; 
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+input, select {
+    height: 25px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: "Courier New";
+}
+
+
+
+.single-input label {
+    margin: 30px 0px 10px 0px;
+}
+
+select {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+fieldset {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-right: -17px;
+    padding-left: 0px;
+    margin-left: -1px;
+    width: 100%;
+}
+
+fieldset label {
+    display: inline-block;
+}
+  
+button {
+    border: none;
+    background:#3b0641;
+    padding: 8px;
+    color:white;
+    margin: 4vh 0px;
+    width: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.4s ease;
+    font-size: 13px;
+}
+button:hover {
+      background-color: rgb(2, 85, 153);
+}
+
+button:active {
+    background-color: rgb(62, 219, 41);
+}
+
+input[type="radio"], input[type="checkbox"] {
+    height: 100%;
+    margin-bottom: 7px;
+}

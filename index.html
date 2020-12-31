@@ -1,11 +1,73 @@
+
+<!-- LOOK AT SURVEY FORMS TO GET INSPIRATION FOR DESIGN
+
+DON'T TRY TO COME UP WITH DESIGN FROM YOUR HEAD CUZ YOU SUCK
+
+ALSO MAYBE LOOK AT A FORM TUTORIAL BECAUSE THEY MIGHT HAVE ATTRIBUTES AND TRICKS TO DO WITH FORMS THAT YOU DON'T KNOW ABOUT.
+
+COOL TUTORIAL TO LOOK AT IN THE FUTURE https://www.youtube.com/watch?v=IxRJ8vplzAo -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surveys Survey Form</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="title-div"><h1 id="title">About Surveys</h1>
+    <p id="description">Please take your time to fill out this survey about surveys, and be in the draw to compete in a survey designing competition.</p></div>
+    
+    
+    <!-- look up tutorial on how to properly submit with action -->
+    <form id="survey-form" action="https://freecatphotoapp.com/submit-cat-photo">
+        <section class="single-input">
+            <label for="name" id="name-label">Name:</label>
+            <input id="name" type="text" required placeholder="Your full name">
+            <label for="email" id="email-label">Email:</label>
+            <input id="email" type="email" required placeholder="Your email address">
+            <label for="number" id="number-label">Number:</label>
+            <input id="number" type="number" min="1" max="19" placeholder="number must be 1-19">
+            <label for="dropdown" id="dropdown-label">How often do you do surveys for fun?</label>
+            <select id="dropdown" name="dropdown">
+            <option value="no interest" selected="selected">Frequently</option>
+            <option value="surveys are okay">Regularly</option>
+            <option value="I love surveys">Often</option>
+            </select>
+        </section>
+        <fieldset>
+            <legend>Choose favourite kind of music for completing surveys</legend>
+            <!-- maybe nest input & label pair within a div tag for styling -->
+            <div><input id="instrumental" type="radio" name="music-for-doing-surveys" value="instrumental">
+            <label for="instrumental">Instrumental</label></div>
+            <div><input id="a-cappella" type="radio" name="music-for-doing-surveys" value="a-cappella">
+            <label for="a-cappella">A cappella</label></div>
+            <div><input id="ween" type="radio" name="music-for-doing-surveys" value="ween">
+            <label for="ween">Ween</label></div>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your favourite types of surveys</legend>
+            <div><input type="checkbox" id="medical" name="favourite-survey-type" value="medical">
+            <label for="medical">Medical</label></div>
+            <div><input type="checkbox" id="political" name="favourite-survey-type" value="political">
+            <label for="medical">Political</label></div>
+            <div><input type="checkbox" id="orange" name="favourite-survey-type" value="consumer">
+            <label for="medical">Surveys with the colour orange</label></div>
+            <div><input type="checkbox" id="checkboxes" name="favourite-survey-type" value="checkboxes">
+            <label for="medical">Surveys with checkboxes</label></div>
+        </fieldset>
+        <section class="single-input">
+            <label for="survey-story" id="survey-story-label">Write about the most interesting survey you have completed i may not have enough time. the rest of this page is just a cover up please help me. a wizard trapped me inside the internet. you need to write the magic words below "free this p</label>
+            <textarea id="survey-story" name="survey-story" rows="4" cols="33" placeholder="Enter your most interesting survey..."></textarea>
+        </section>
+
+
+        <button id="submit" type="submit">submit</button>
+
+    </form>
+
+    
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
