@@ -60,9 +60,12 @@ textarea {
     width: 100%;
     font-size: 15px;
     font-family: "Courier New";
+    padding-top: 4px;
 }
 
-
+input, textarea {
+    padding-left: 6px;
+}
 
 .single-input label {
     margin: 30px 0px 10px 0px;
@@ -99,7 +102,7 @@ button {
     font-size: 13px;
 }
 button:hover {
-      background-color: rgb(2, 85, 153);
+      background-color: rgb(15, 32, 182);
 }
 
 button:active {
