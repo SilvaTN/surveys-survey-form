@@ -33,9 +33,12 @@ form {
     background-color: rgba(238, 68, 133, 0.89);
 }
 
-label, fieldset {
-    text-transform: uppercase;
+fieldset {
     border: none;
+}
+
+legend {
+    text-transform: uppercase;
 }
 
 #survey-story-label {
@@ -50,7 +53,7 @@ label, fieldset {
     /* border: 1px solid black; */
 }
 
-input, select {
+#survey-form input, select {
     height: 25px;
     vertical-align: middle;
     font-size: 15px;
