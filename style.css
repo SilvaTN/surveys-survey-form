@@ -89,7 +89,7 @@ fieldset {
 }
 
 fieldset label {
-    display: inline-block;
+    /* display: inline-block; */
 }
   
 button {
@@ -115,4 +115,10 @@ button:active {
 input[type="radio"], input[type="checkbox"] {
     height: 100%;
     margin-bottom: 7px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px 30px 20px 20px;
+    }
 }
